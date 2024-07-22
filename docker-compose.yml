@@ -2,9 +2,7 @@ version: '3.8'
 
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: apistackoverflowquestions-app:latest
     container_name: StackOverFlowAPP
     restart: unless-stopped
     volumes:

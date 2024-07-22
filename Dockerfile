@@ -19,7 +19,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 WORKDIR /var/www/html
 
 # Copy the Symfony application code into the container
-COPY .. /var/www/html
+COPY . /var/www/html
 
 RUN composer install --no-scripts --no-autoloader
 
@@ -36,7 +36,7 @@ RUN a2enmod rewrite
 
 COPY apache/000-default.conf /etc/apache2/sites-available/000-default.conf
 
-COPY .env.test /var/www/html
+COPY .env.test /var/www/html/.env
 
 COPY docker/entrypoint.sh /usr/local/bin/entrypoint.sh
 

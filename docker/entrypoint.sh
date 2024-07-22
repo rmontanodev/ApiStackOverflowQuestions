@@ -1,10 +1,14 @@
 #!/bin/bash
 
+echo "updating composer"
+composer update
 while ! mysql -h "$DB_HOST" -u "$DB_USER" -p"$MYSQL_ROOT_PASSWORD" -e "SELECT 1" > /dev/null 2>&1;
 do
     echo "Waiting for MySQL to be available..."
     sleep 1
 done
+echo "clearing composer cache"
+composer clear-cache
 
 echo "Creating databases and running migrations..."
 

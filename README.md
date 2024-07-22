@@ -1,26 +1,26 @@
 # StackOverflow API Project
-###Descripción
-Este proyecto es una API diseñada para interactuar con datos de StackOverflow, implementada utilizando una arquitectura hexagonal y principios de Domain-Driven Design (DDD). La aplicación proporciona una interfaz RESTful que permite a los usuarios obtener preguntas de StackOverflow basadas en diversos filtros.
-
-## Características
-- Arquitectura Hexagonal: Se ha implementado una arquitectura hexagonal para separar la lógica de negocio de las dependencias externas.
-- Domain-Driven Design (DDD): El diseño de la aplicación sigue los principios de DDD para una mejor estructuración y organización del código.
-- 100% de Cobertura de Pruebas: Todos los componentes del proyecto tienen una cobertura de pruebas del 100%, asegurando que el código sea confiable y robusto.
-- Swagger API: Documentación interactiva para probar la API directamente desde el navegador. Accede a la documentación en /api/doc.
-- Logging: Implementación de logging con Monolog para registrar eventos importantes y errores en la aplicación.
+### Description
+The idea of this project is an API designed to interact with StackOverflow data, implemented using a hexagonal architecture and Domain-Driven Design (DDD) principles. The application provides a RESTful interface that allows users to retrieve StackOverflow questions based on various filters.
+## Features
+- **Hexagonal Architecture**: A hexagonal architecture has been implemented to separate business logic from external dependencies.
+- **Domain-Driven Design (DDD)**: The application design follows DDD principles for better code structuring and organization.
+- **Testing**: All project components have 100% test coverage, ensuring that the code is reliable and robust.
+- **Swagger API**: Interactive documentation for testing the API directly from the browser. Access the documentation at /api/doc.
+- **Logging**: Logging implementation with Monolog to record important events and errors in the application.
 
 ## Tecnologías Utilizadas
-- PHP: Lenguaje de programación para el desarrollo del backend.
-- Symfony: Framework PHP utilizado para desarrollar la API.
-- Docker: Contenerización de la aplicación para un entorno de desarrollo consistente.
-- Swagger: Documentación de la API y pruebas interactivas.
-- MySQL: Sistema de gestión de bases de datos utilizado para almacenar datos.
-## Instalación
+- **PHP**: Programming language for backend development.
+- **Symfony**: PHP framework used to develop the API.
+- **Docker**: Containerization of the application for a consistent development environment.
+- **Swagger**: API documentation and interactive testing.
+- **MySQL**: Database management system used to store data.
+## Instalation
 ### Requirements
-- Docker y Docker Compose instalados en tu máquina.
+- Docker and Docker Compose installed on your machine.
 ### Installation steps
 #### 1. Clona el Repositorio
 git clone git@github.com:rmontanodev/ApiStackOverflowQuestions.git
+#### 1.1 go to repo
 cd ApiStackOverflowQuestions
 
 #### 2. Build
@@ -31,7 +31,6 @@ docker-compose up -d
 
 #### 4. Run tests
 ./vendor/bin/phpunit 
-####There is already a report about the coverage and complexity /build/coverage/index.html
 ##### Generate a new report
 ./vendor/bin/phpunit --coverage-html coverage
 

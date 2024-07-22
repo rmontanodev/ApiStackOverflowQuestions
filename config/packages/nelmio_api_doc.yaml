@@ -1,0 +1,12 @@
+nelmio_api_doc:
+    documentation:
+        swagger_ui:
+            enable: true
+            url: /api/openapi.yaml
+        info:
+            title: QuestionAPI
+            description: StackOverFlowQuestionAPI
+            version: 1.0.0
+    areas: # to filter documented areas
+        path_patterns:
+            - ^/api(?!/doc$) # Accepts routes under /api except /api/doc

@@ -1,0 +1,9 @@
+controllers:
+  resource:
+    path: ../../src/Infrastructure/Http/Controllers
+    namespace: App\Infrastructure\Http\Controllers
+  type: attribute
+
+kernel:
+  resource: App\Kernel
+  type: attribute

@@ -24,15 +24,13 @@ git clone git@github.com:rmontanodev/ApiStackOverflowQuestions.git
 cd ApiStackOverflowQuestions
 
 #### 2. Build
-docker-compose build
+docker build -t apistackoverflowquestions-app:latest .
 
 #### 3. Run it
 docker-compose up -d
 
 #### 4. Run tests
-./vendor/bin/phpunit 
-##### Generate a new report
-./vendor/bin/phpunit --coverage-html coverage
+./vendor/bin/phpunit --coverage-html build/coverage
 
 #### 5. Test API
 You can check endpoints and test it in http://localhost:8080/api/doc.

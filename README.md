@@ -30,7 +30,10 @@ docker build -t apistackoverflowquestions-app:latest .
 docker-compose up -d
 
 #### 4. Run tests
-./vendor/bin/phpunit --coverage-html build/coverage
+docker exec -it StackOverFlowAPP ./vendor/bin/phpunit --coverage-html build/coverage
+#### 4.1 Copy coverage
+docker cp StackOverFlowAPP:/var/www/html/build .
 
+Now on your project there is the coverage on **build/coverage/index.html**
 #### 5. Test API
 You can check endpoints and test it in http://localhost:8080/api/doc.

@@ -5,8 +5,6 @@ services:
     image: apistackoverflowquestions-app:latest
     container_name: StackOverFlowAPP
     restart: unless-stopped
-    volumes:
-      - ./:/var/www/html
     ports:
       - "8080:80"
     networks:

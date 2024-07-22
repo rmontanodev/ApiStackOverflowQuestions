@@ -14,11 +14,11 @@ The idea of this project is an API designed to interact with StackOverflow data,
 - **Docker**: Containerization of the application for a consistent development environment.
 - **Swagger**: API documentation and interactive testing.
 - **MySQL**: Database management system used to store data.
-## Instalation
+## Installation
 ### Requirements
 - Docker and Docker Compose installed on your machine.
 ### Installation steps
-#### 1. Clona el Repositorio
+#### 1. Clone el Repositorio
 git clone git@github.com:rmontanodev/ApiStackOverflowQuestions.git
 #### 1.1 go to repo
 cd ApiStackOverflowQuestions

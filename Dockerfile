@@ -42,6 +42,9 @@ COPY docker/entrypoint.sh /usr/local/bin/entrypoint.sh
 
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
+#Needed cause it caused bug cause windows format
+RUN sed -i 's/\r$//' /usr/local/bin/entrypoint.sh
+
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
 # Expose port 80 to serve Symfony application with Apache

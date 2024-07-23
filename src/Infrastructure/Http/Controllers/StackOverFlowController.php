@@ -62,39 +62,6 @@ class StackOverFlowController extends AbstractController
                         type: 'object',
                         properties: [
                             new OA\Property(property: 'tags', type: 'array', items: new OA\Items(type: 'string'), example: ['php', 'windows', 'imagemagick']),
-                            new OA\Property(
-                                property: 'owner',
-                                type: 'object',
-                                properties: [
-                                new OA\Property(property: 'account_id', type: 'integer', example: 963689),
-                                new OA\Property(property: 'reputation', type: 'integer', example: 1614),
-                                new OA\Property(property: 'user_id', type: 'integer', example: 987517),
-                                new OA\Property(property: 'user_type', type: 'string', example: 'registered'),
-                                new OA\Property(property: 'accept_rate', type: 'integer', example: 44),
-                                new OA\Property(property: 'profile_image', type: 'string', format: 'uri', example: 'https://i.sstatic.net/CbYax.jpg?s=256'),
-                                new OA\Property(property: 'display_name', type: 'string', example: 'anoop'),
-                                new OA\Property(property: 'link', type: 'string', format: 'uri', example: 'https://stackoverflow.com/users/987517/anoop')
-                            ],
-                                example: [
-                                    'account_id' => 963689,
-                                    'reputation' => 1614,
-                                    'user_id' => 987517,
-                                    'user_type' => 'registered',
-                                    'accept_rate' => 44,
-                                    'profile_image' => 'https://i.sstatic.net/CbYax.jpg?s=256',
-                                    'display_name' => 'anoop',
-                                    'link' => 'https://stackoverflow.com/users/987517/anoop'
-                                ]
-                            ),
-                            new OA\Property(property: 'is_answered', type: 'boolean', example: true),
-                            new OA\Property(property: 'view_count', type: 'integer', example: 27500),
-                            new OA\Property(property: 'answer_count', type: 'integer', example: 9),
-                            new OA\Property(property: 'score', type: 'integer', example: 10),
-                            new OA\Property(property: 'last_activity_date', type: 'integer', example: 1721658968),
-                            new OA\Property(property: 'creation_date', type: 'integer', example: 1362682120),
-                            new OA\Property(property: 'last_edit_date', type: 'integer', example: 1363677405),
-                            new OA\Property(property: 'question_id', type: 'integer', example: 15279301),
-                            new OA\Property(property: 'content_license', type: 'string', example: 'CC BY-SA 3.0'),
                             new OA\Property(property: 'link', type: 'string', format: 'uri', example: 'https://stackoverflow.com/questions/15279301/imagemagick-supported-formats-no-value'),
                             new OA\Property(property: 'title', type: 'string', example: 'ImageMagick supported formats no value')
                         ]

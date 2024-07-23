@@ -8,7 +8,7 @@ The idea of this project is an API designed to interact with StackOverflow data,
 - **Swagger API**: Interactive documentation for testing the API directly from the browser. Access the documentation at /api/doc.
 - **Logging**: Logging implementation with Monolog to record important events and errors in the application.
 
-## Tecnologías Utilizadas
+## Tech
 - **PHP**: Programming language for backend development.
 - **Symfony**: PHP framework used to develop the API.
 - **Docker**: Containerization of the application for a consistent development environment.

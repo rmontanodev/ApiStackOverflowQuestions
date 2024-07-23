@@ -38,10 +38,11 @@ class GetQuestionsUseCaseTest extends TestCase
             ->method('findByCriteria')
             ->with($filters)
             ->willReturn($cachedQuestions);
+        $questions = [];
         try{
             $questions = $this->useCase->execute($filters);
         }catch(\Exception $e){
-            $this->assertTrue(true);
+            $this->assertTrue(false);
         }
 
         $this->assertSame($cachedQuestions, $questions);
